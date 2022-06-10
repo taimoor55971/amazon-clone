@@ -1,13 +1,15 @@
-import firebase from "firebase"
+import firebase from "firebase";
+
 const firebaseConfig = {
-  apiKey: "AIzaSyBoR2ch4I_u1QLmeTjIlyzYUe7dk6GYZSI",
-  authDomain: "clone-59964.firebaseapp.com",
-  databaseURL: "https://clone-59964.firebaseio.com",
-  projectId: "clone-59964",
-  storageBucket: "clone-59964.appspot.com",
-  messagingSenderId: "1093257831000",
-  appId: "1:1093257831000:web:3013a152e48e324cc5e02d"
+  apiKey: "AIzaSyCcPSKlYtpdzBoAC8soeSmIARMzVKzrf5I",
+  authDomain: "challenge-4b2b2.firebaseapp.com",
+  databaseURL: "https://challenge-4b2b2.firebaseio.com",
+  projectId: "challenge-4b2b2",
+  storageBucket: "challenge-4b2b2.appspot.com",
+  messagingSenderId: "962418448875",
+  appId: "1:962418448875:web:f6cce5eeaf819481f661ae",
 };
+
 const firebaseApp = firebase.initializeApp(firebaseConfig);
 
 const db = firebaseApp.firestore();

@@ -45,30 +45,27 @@ function App() {
  
   return (
     <Router>
-    <div className="app">
-    
-      <Switch>
-      <Route path="/checkout">   
-      <Header/>
-        <Checkout/>
-        
-        </Route>
-        <Route path="/Login">
-        <Login/>
-      </Route>
-      <Route path="/payment">
-      <Header/>
-      <Elements stripe={promise}>
-        <Payment/>
-        </Elements>
-      </Route>
-      <Route path="/">
-      <Header/>   
-        <HOME/>
-      </Route>
-      
-      </Switch>      
-     </div>
+      <div className="app">
+        <Header />
+        <Switch>
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
+          <Route path="/Login">
+            <Login />
+          </Route>
+          <Route path="/payment">
+           
+            <Elements stripe={promise}>
+              <Payment />
+            </Elements>
+          </Route>
+          <Route path="/">
+            
+            <HOME />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
